@@ -7,10 +7,10 @@ def hello():
 
 
 @app.route("/dashboard/")
-def hello():
-    return "Dashboard page"
+def dashboard():
+    return render_template('dashboard.html')
 
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
