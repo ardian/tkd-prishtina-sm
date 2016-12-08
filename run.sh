@@ -1,2 +1,2 @@
-source ./venv/bin/activate
-python __init__.py
+from views import app
+app.run(debug=True)
